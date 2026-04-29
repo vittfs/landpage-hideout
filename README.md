@@ -98,6 +98,10 @@ index.html
 
 ---
 
+## 🚀 Acesse o Projeto
+
+[![Abrir site](https://img.shields.io/badge/Acessar%20Site-VDB%20Burguer%20%26%20Beer-orange?style=for-the-badge)](https://vittfs.github.io/landpage-hideout/)
+
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins educacionais e de portfólio.
