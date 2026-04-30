@@ -1,160 +1,275 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VDB Burguer & Beer</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIDEOUT — VDB Burguer & Beer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<header id="header">
-  <div class="logo">
-    <img src="logo.jpeg" alt="VDB Burguer & Beer">
-    <h1>HIDEOUT - VDB Burguer & Beer</h1>
-  </div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#reserva">Reserva</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">HIDEOUT</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#eventos">Eventos</a></li>
+    <li><a href="#pedido">Cardápio</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="#reserva" class="nav-cta">Reservar</a>
+</nav>
+
 <!-- HERO -->
-<section class="hero">
-  <h2>Os melhores burgers da cidade</h2>
-  <p>Experiência única com música, eventos e muito sabor</p>
-  <a href="#reserva" class="btn">Reservar agora</a>
+<section id="hero">
+  <div class="hero-img-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Casa Verde, São Paulo</div>
+    <h1 class="hero-title">HIDE<span>OUT</span></h1>
+    <p class="hero-sub">Burgers artesanais · Chopp gelado · Música ao vivo</p>
+    <div class="hero-actions">
+      <a href="#pedido" class="btn-primary">Ver Cardápio</a>
+      <a href="#eventos" class="btn-ghost">Próximos Eventos</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span class="scroll-text">scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">Burgers Artesanais <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Chopp Gelado <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Eventos Exclusivos <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Música ao Vivo <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Casa Verde SP <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">VDB Burguer & Beer <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Burgers Artesanais <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Chopp Gelado <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Eventos Exclusivos <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Música ao Vivo <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Casa Verde SP <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">VDB Burguer & Beer <span class="ticker-dot">◆</span></span>
+  </div>
+</div>
 
 <!-- SOBRE -->
-<section id="sobre" class="section">
-  <h2>🍔 Nossa História</h2>
-  <p>
-    A VDB Burguer & Beer nasceu com a missão de trazer burgers artesanais
-    de alta qualidade, combinados com uma experiência única de bar.
-    Participamos de diversos eventos gastronômicos e festivais pela cidade,
-    levando nosso sabor autêntico para todos.
-  </p>
-</section>
+<div id="sobre">
+  <div class="sobre-image reveal">
+    <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=800&q=80" alt="Burger artesanal VDB">
+    <div class="sobre-image-accent"></div>
+    <div class="sobre-image-counter">
+      <span class="num">4+</span>
+      <span class="label">anos de<br>sabor</span>
+    </div>
+  </div>
+  <div class="sobre-text reveal">
+    <div class="section-label">Nossa História</div>
+    <h2 class="section-title">Uma experiência além do burger</h2>
+    <p>A VDB Burguer & Beer nasceu com a missão de trazer burgers artesanais de alta qualidade para São Paulo, combinados com uma experiência autêntica de bar — onde cada detalhe importa, do pão brioche à seleção de cervejas.</p>
+    <p>Participamos de festivais e eventos gastronômicos pela cidade, levando nosso sabor singular a cada esquina. No Hideout, você não vem só comer — você vem viver.</p>
+    <div class="sobre-divider"></div>
+    <div class="sobre-stats">
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-desc">Opções no cardápio</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">★ 4.8</div>
+        <div class="stat-desc">Avaliação no iFood</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-desc">Plataformas delivery</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">∞</div>
+        <div class="stat-desc">Chopp na torneira</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- EVENTOS -->
-<section id="eventos" class="section dark">
-  <h2>Eventos</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Chuvisco</h3>
-      <p>Participação com nosso burger campeão</p>
+<section id="eventos">
+  <div class="eventos-header reveal">
+    <div>
+      <div class="section-label">Agenda</div>
+      <h2 class="section-title">Eventos em Destaque</h2>
     </div>
-
-    <div class="card">
-      <h3>Concerto da lua</h3>
-      <p>Música ao vivo + promoções especiais </p>
+    <a href="#reserva" class="btn-ghost">Reservar lugar →</a>
+  </div>
+  <div class="eventos-grid">
+    <div class="evento-card reveal">
+      <div class="evento-num">01</div>
+      <span class="evento-tag">Gastronomia</span>
+      <h3 class="evento-title">Chuvisco Festival</h3>
+      <p class="evento-desc">Nossa participação no festival com o burger campeão que conquistou SP. Uma noite de sabores únicos e muita música.</p>
+      <div class="evento-arrow">→</div>
     </div>
-
-    <div class="card">
-      <h3>Happy Hour VDB</h3>
-      <p>Descontos em chopp gelado 🍻</p>
+    <div class="evento-card reveal">
+      <div class="evento-num">02</div>
+      <span class="evento-tag">Música ao Vivo</span>
+      <h3 class="evento-title">Concerto da Lua</h3>
+      <p class="evento-desc">Música ao vivo com as melhores bandas da cena local, combinada com promoções especiais no chopp e nos combos.</p>
+      <div class="evento-arrow">→</div>
     </div>
+    <div class="evento-card reveal">
+      <div class="evento-num">03</div>
+      <span class="evento-tag">Toda Semana</span>
+      <h3 class="evento-title">Happy Hour VDB</h3>
+      <p class="evento-desc">O happy hour mais aguardado da semana. Descontos especiais em chopp gelado e petiscos para você descomprimir.</p>
+      <div class="evento-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- PEDIDO -->
+<section id="pedido">
+  <div class="reveal">
+    <div class="section-label" style="justify-content:center">Cardápio</div>
+    <h2 class="section-title">Peça Agora</h2>
+    <p style="color:var(--muted);max-width:500px;margin:0 auto;font-size:0.95rem;line-height:1.8">
+      Disponível nas principais plataformas de delivery da cidade. Ou venha nos visitar em Av. Casa Verde, 2520.
+    </p>
+  </div>
+  <div class="menu-showcase">
+    <div class="menu-item reveal">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Burger clássico">
+      <div class="menu-item-name">Classic Hideout</div>
+      <div class="menu-item-desc">O original. Blend de carnes nobre, queijo cheddar, cebola caramelizada e molho da casa.</div>
+    </div>
+    <div class="menu-item reveal">
+      <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80" alt="Burger duplo">
+      <div class="menu-item-name">VDB Double</div>
+      <div class="menu-item-desc">Duplo blend, duplo queijo, bacon crocante e o nosso molho especial que não tem igual.</div>
+    </div>
+    <div class="menu-item reveal">
+      <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80" alt="Combo com batata e cerveja">
+      <div class="menu-item-name">Combo Beer</div>
+      <div class="menu-item-desc">Burger à escolha + porção de batatas rústicas + chopp gelado. O combo perfeito para a sexta.</div>
+    </div>
+  </div>
+  <div class="delivery-platforms reveal">
+    <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/vdb-burger---hamburgueria-casa-verde/d8966fcf-f9f4-4e8d-bf8f-9509172518b7" target="_blank" class="platform-btn">
+      <span class="platform-icon">🛵</span> iFood
+    </a>
+    <a href="https://oia.99app.com/dlp9/ArEwfU" target="_blank" class="platform-btn">
+      <span class="platform-icon">🍽️</span> 99Food
+    </a>
+    <a href="https://url-eu.mykeeta.com/3i4pmscz" target="_blank" class="platform-btn">
+      <span class="platform-icon">⚡</span> Keeta
+    </a>
+    <a href="https://hideoutburgerbeer.ola.click/products" target="_blank" class="btn-primary">
+      Ver Cardápio Completo
+    </a>
   </div>
 </section>
 
 <!-- RESERVA -->
-<section id="reserva" class="section">
-  <h2>Reserva para Eventos</h2>
-
-  <form id="formReserva">
-    <input type="text" placeholder="Seu nome" required>
-    <input type="email" placeholder="Seu email" required>
-    <input type="date" required>
-    <input type="number" placeholder="Número de pessoas" required>
-    <button type="submit">Reservar</button>
-  </form>
-
-  <p id="msg"></p>
-</section>
-
-<!-- DELIVERY -->
-<section class="section dark">
- <section class="section dark">
-  <h2>Peça agora</h2>
-
-  <div class="cards">
-
-    <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/vdb-burger---hamburgueria-casa-verde/d8966fcf-f9f4-4e8d-bf8f-9509172518b7?utm_medium=share"
-       target="_blank" class="card link">
-       Pedir no iFood
-    </a>
-
-    <a href="https://oia.99app.com/dlp9/ArEwfU"
-       target="_blank" class="card link">
-       Pedir no 99Food
-    </a>
-
-    <a href="https://url-eu.mykeeta.com/3i4pmscz"
-       target="_blank" class="card link">
-       Pedir no Keeta
-    </a>
-
+<section id="reserva">
+  <div class="reserva-inner">
+    <div>
+      <div class="section-label reveal">Reservas</div>
+      <h2 class="section-title reveal">Reserve seu lugar</h2>
+      <p class="reveal" style="color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:2rem">
+        Garanta sua mesa para os eventos especiais ou para aquela reunião que precisa de um cenário à altura.
+      </p>
+      <form class="reserva-form reveal" onsubmit="return handleForm(event)">
+        <div class="form-group">
+          <label>Nome completo</label>
+          <input type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label>WhatsApp</label>
+          <input type="tel" placeholder="(11) 9 0000-0000" required>
+        </div>
+        <div class="form-group">
+          <label>Evento / Data</label>
+          <select>
+            <option value="">Selecione o evento</option>
+            <option>Chuvisco Festival</option>
+            <option>Concerto da Lua</option>
+            <option>Happy Hour VDB</option>
+            <option>Outro (especifique nas observações)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Observações</label>
+          <textarea placeholder="Número de pessoas, preferências..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar Reserva</button>
+      </form>
+    </div>
+    <div class="reserva-info reveal">
+      <h3>Informações</h3>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="info-label">Endereço</div>
+          <div class="info-value">Av. Casa Verde, 2520<br>Casa Verde — São Paulo, SP</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <div class="info-label">Telefone / WhatsApp</div>
+          <div class="info-value">(11) 3877-0075</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <div>
+          <div class="info-label">Horário</div>
+          <div class="info-value">Seg – Quin: 18h – 22h<br>Sex – Sáb: 18h – 23h</div>
+        </div>
+      </div>
+      <div class="info-item" style="border:none;padding-bottom:0;margin-bottom:0">
+        <div class="info-icon">📸</div>
+        <div>
+          <div class="info-label">Instagram</div>
+          <div class="info-value">
+            <a href="https://www.instagram.com/vdbemeals" target="_blank" style="color:var(--gold);text-decoration:none">@vdbemeals</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <a href="https://hideoutburgerbeer.ola.click/products"
-     target="_blank"
-     class="btn">
-     Ver Cardápio Digital
-  </a>
 </section>
 
-<!-- MAPA -->
-<section id="contato" class="section">
-  <h2>📍 Onde estamos</h2>
-
-  <p>
-    Av. Casa Verde, 2520 - Casa Verde <br>
-    São Paulo - SP
-  </p>
-
-  <iframe 
-    src="https://www.google.com/maps?q=Av.+Casa+Verde,+2520,+São+Paulo&output=embed">
-  </iframe>
+<!-- CONTATO / MAPA -->
+<section id="contato">
+  <div class="reveal">
+    <div class="section-label" style="justify-content:center">Nos encontre</div>
+    <h2 class="section-title">Onde estamos</h2>
+    <p class="contato-address">Av. Casa Verde, 2520 — Casa Verde<br>São Paulo — SP</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/vdbemeals" target="_blank" class="social-link">
+        <span>📸</span> Instagram
+      </a>
+      <a href="https://wa.me/551138770075" target="_blank" class="social-link">
+        <span>💬</span> WhatsApp
+      </a>
+    </div>
+    <a href="https://maps.google.com/?q=Av.+Casa+Verde+2520+São+Paulo" target="_blank" class="map-link">
+      Abrir no Google Maps ↗
+    </a>
+  </div>
 </section>
 
-
-<!-- FOOTER -->
 <footer>
-
-  <div class="social">
-
-    <a href="https://www.instagram.com/vdbemeals?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
-       target="_blank" rel="noopener noreferrer">
-
-      <img src="https://icongr.am/simple/instagram.svg?size=24&color=E1306C" 
-           alt="Instagram" class="icon">
-
-      Instagram
-    </a>
-
-    <a href="https://wa.me/551138770075" 
-       target="_blank" rel="noopener noreferrer">
-
-      <img src="https://icongr.am/simple/whatsapp.svg?size=24&color=25D366" 
-           alt="WhatsApp" class="icon">
-
-      WhatsApp
-    </a>
-
-  </div>
-
-  <p>© 2026 VDB Burguer & Beer</p>
-
+  <div class="footer-logo">HIDEOUT · VDB</div>
+  <div class="footer-copy">© 2026 VDB Burguer & Beer — Todos os direitos reservados</div>
 </footer>
 <script src="script.js"></script>
-
 </body>
 </html>
